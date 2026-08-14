@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Happy Kids Babysitting | Urubó, Santa Cruz</title>
+
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 *{
@@ -20,6 +23,8 @@ body{
     color:#333;
     overflow-x:hidden;
 }
+
+/* HEADER */
 
 header{
     background:linear-gradient(135deg,#ff75ad,#ff9ac8);
@@ -55,6 +60,8 @@ header::after{
 .logo{
     font-size:4rem;
     margin-bottom:10px;
+    position:relative;
+    z-index:2;
 }
 
 header h1{
@@ -69,6 +76,8 @@ header p{
     position:relative;
     z-index:2;
 }
+
+/* NAVIGATION */
 
 nav{
     display:flex;
@@ -98,9 +107,28 @@ nav a:hover{
     color:#ff4f95;
 }
 
+/* GENERAL SECTIONS */
+
 section{
     padding:80px 9%;
 }
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:2.4rem;
+    color:#ff4f95;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#777;
+}
+
+/* HERO */
 
 .hero{
     min-height:600px;
@@ -142,6 +170,8 @@ section{
     margin:0 auto 30px;
 }
 
+/* BUTTONS */
+
 .buttons{
     display:flex;
     justify-content:center;
@@ -160,6 +190,8 @@ section{
     font-weight:600;
     transition:.3s;
     box-shadow:0 8px 20px rgba(106,92,255,.25);
+    text-decoration:none;
+    display:inline-block;
 }
 
 .btn:hover{
@@ -179,20 +211,7 @@ section{
     color:white;
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:45px;
-}
-
-.section-title h2{
-    font-size:2.4rem;
-    color:#ff4f95;
-    margin-bottom:10px;
-}
-
-.section-title p{
-    color:#777;
-}
+/* STATS */
 
 .stats{
     display:grid;
@@ -219,6 +238,8 @@ section{
 .stat p{
     color:#777;
 }
+
+/* ABOUT */
 
 .about{
     background:white;
@@ -264,6 +285,8 @@ section{
     margin-bottom:8px;
 }
 
+/* SERVICES */
+
 .services{
     background:linear-gradient(135deg,#fff0f7,#edfaff);
 }
@@ -301,6 +324,8 @@ section{
     color:#666;
     line-height:1.7;
 }
+
+/* PRICES */
 
 .price-cards .card{
     position:relative;
@@ -345,6 +370,8 @@ section{
     font-weight:bold;
 }
 
+/* SAFETY */
+
 .safety{
     background:white;
 }
@@ -370,6 +397,8 @@ section{
     margin:12px 0;
     color:#6a5cff;
 }
+
+/* BOOKING */
 
 .booking{
     background:linear-gradient(135deg,#ffe5f1,#e4f8ff);
@@ -434,6 +463,57 @@ section{
     font-weight:600;
 }
 
+/* PAYMENT / QR */
+
+.payment{
+    background:white;
+}
+
+.payment-box{
+    max-width:700px;
+    margin:auto;
+    background:linear-gradient(135deg,#fff5fa,#f4f2ff);
+    padding:40px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.payment-box h3{
+    color:#6a5cff;
+    font-size:1.5rem;
+    margin-bottom:10px;
+}
+
+.payment-box p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.qr-container{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    display:inline-block;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.qr-container img{
+    width:230px;
+    height:230px;
+    object-fit:contain;
+    display:block;
+}
+
+.payment-note{
+    margin-top:20px;
+    font-weight:600;
+    color:#ff4f95;
+}
+
+/* REVIEWS */
+
 .reviews{
     background:white;
 }
@@ -465,6 +545,8 @@ section{
 .review strong{
     color:#6a5cff;
 }
+
+/* FAQ */
 
 .faq{
     max-width:850px;
@@ -506,6 +588,8 @@ section{
     padding:0 20px 20px;
 }
 
+/* CONTACT */
+
 .contact{
     background:linear-gradient(135deg,#fff0f7,#f0f5ff);
 }
@@ -539,6 +623,14 @@ section{
     font-weight:600;
 }
 
+.phone-number{
+    font-size:1.3rem;
+    font-weight:700;
+    color:#6a5cff;
+}
+
+/* FOOTER */
+
 footer{
     background:#ff75ad;
     color:white;
@@ -550,6 +642,8 @@ footer h3{
     font-size:1.6rem;
     margin-bottom:10px;
 }
+
+/* WHATSAPP */
 
 .whatsapp{
     position:fixed;
@@ -574,6 +668,8 @@ footer h3{
     transform:scale(1.1);
 }
 
+/* BACK TO TOP */
+
 .top{
     position:fixed;
     bottom:95px;
@@ -588,6 +684,8 @@ footer h3{
     display:none;
     z-index:999;
 }
+
+/* MODAL */
 
 .modal{
     display:none;
@@ -623,11 +721,14 @@ footer h3{
         transform:scale(.8);
         opacity:0;
     }
+
     to{
         transform:scale(1);
         opacity:1;
     }
 }
+
+/* MOBILE */
 
 @media(max-width:800px){
 
@@ -687,436 +788,650 @@ footer h3{
     .hero h2{
         font-size:2rem;
     }
+
+    .qr-container img{
+        width:190px;
+        height:190px;
+    }
+
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
+
 <div class="logo">🧸</div>
+
 <h1>Happy Kids Babysitting</h1>
-<p>Safe • Fun • Caring Babysitting in Urubó, Santa Cruz, Bolivia</p>
+
+<p>
+Safe • Fun • Caring Babysitting in Urubó, Santa Cruz, Bolivia
+</p>
+
 </header>
 
+
+<!-- NAVIGATION -->
+
 <nav>
+
 <a href="#about">About</a>
 <a href="#services">Services</a>
 <a href="#packages">Packages</a>
 <a href="#safety">Safety</a>
 <a href="#booking">Book</a>
+<a href="#payment">Payment</a>
 <a href="#reviews">Reviews</a>
 <a href="#faq">FAQ</a>
 <a href="#contact">Contact</a>
+
 </nav>
 
+
+<!-- HERO -->
+
 <section class="hero">
+
 <div class="hero-content">
 
-    <div class="badge">💗 Trusted • Fun • Caring</div>
+<div class="badge">
+💗 Trusted • Fun • Caring
+</div>
 
-    <h2>Making Babysitting Fun & Stress-Free!</h2>
+<h2>
+Making Babysitting Fun & Stress-Free!
+</h2>
 
-    <p>
-        Reliable babysitting for busy parents in Urubó.
-        We keep kids safe, entertained, learning and smiling
-        while you get some time for yourself.
-    </p>
+<p>
+Reliable babysitting for busy parents in Urubó.
+We keep kids safe, entertained, learning and smiling
+while you get some time for yourself.
+</p>
 
-    <div class="buttons">
+<div class="buttons">
 
-        <button class="btn" onclick="scrollToBooking()">
-            📅 Book a Session
-        </button>
+<button class="btn" onclick="scrollToBooking()">
+📅 Book a Session
+</button>
 
-        <button class="btn secondary"
-        onclick="document.getElementById('packages').scrollIntoView()">
-            💰 View Packages
-        </button>
+<button class="btn secondary"
+onclick="document.getElementById('packages').scrollIntoView({behavior:'smooth'})">
+💰 View Packages
+</button>
 
-    </div>
+<a
+class="btn"
+href="https://wa.me/59169170555"
+target="_blank">
+💬 WhatsApp Us
+</a>
 
 </div>
+
+</div>
+
 </section>
+
+
+<!-- STATS -->
 
 <div class="stats">
 
 <div class="stat">
-    <h3>3+</h3>
-    <p>Friendly Babysitters</p>
+<h3>3+</h3>
+<p>Friendly Babysitters</p>
 </div>
 
 <div class="stat">
-    <h3>4</h3>
-    <p>Flexible Packages</p>
+<h3>4</h3>
+<p>Flexible Packages</p>
 </div>
 
 <div class="stat">
-    <h3>100%</h3>
-    <p>Kid-Focused Fun</p>
+<h3>100%</h3>
+<p>Kid-Focused Fun</p>
 </div>
 
 <div class="stat">
-    <h3>❤️</h3>
-    <p>Caring Environment</p>
+<h3>❤️</h3>
+<p>Caring Environment</p>
 </div>
 
 </div>
+
+
+<!-- ABOUT -->
 
 <section id="about" class="about">
 
 <div class="section-title">
-    <h2>Meet Our Team 👋</h2>
-    <p>Three friendly babysitters who love making kids happy.</p>
+
+<h2>Meet Our Team 👋</h2>
+
+<p>
+Three friendly babysitters who love making kids happy.
+</p>
+
 </div>
 
 <div class="team">
 
-    <div class="member">
-        <div class="member-avatar">🎨</div>
-        <h4>Carolina D</h4>
-        <p>Creative games & arts specialist</p>
-    </div>
+<div class="member">
 
-    <div class="member">
-        <div class="member-avatar">📚</div>
-        <h4>Martina G</h4>
-        <p>Homework helper & storyteller</p>
-    </div>
+<div class="member-avatar">🎨</div>
 
-    <div class="member">
-        <div class="member-avatar">⚽</div>
-        <h4>Meena T</h4>
-        <p>Outdoor fun & activity planner</p>
-    </div>
+<h4>Carolina D</h4>
+
+<p>
+Creative games & arts specialist
+</p>
 
 </div>
+
+
+<div class="member">
+
+<div class="member-avatar">📚</div>
+
+<h4>Martina G</h4>
+
+<p>
+Homework helper & storyteller
+</p>
+
+</div>
+
+
+<div class="member">
+
+<div class="member-avatar">⚽</div>
+
+<h4>Meena T</h4>
+
+<p>
+Outdoor fun & activity planner
+</p>
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- SERVICES -->
 
 <section id="services" class="services">
 
 <div class="section-title">
-    <h2>What We Do 🧸</h2>
-    <p>More than just babysitting — we make every session special.</p>
+
+<h2>What We Do 🧸</h2>
+
+<p>
+More than just babysitting — we make every session special.
+</p>
+
 </div>
 
 <div class="cards">
 
-    <div class="card">
-        <div class="card-icon">🎨</div>
-        <h3>Arts & Crafts</h3>
-        <p>
-            Painting, drawing, DIY projects, coloring and creative
-            activities designed to keep kids entertained.
-        </p>
-    </div>
 
-    <div class="card">
-        <div class="card-icon">📚</div>
-        <h3>Homework Help</h3>
-        <p>
-            We can help children stay focused, complete assignments
-            and review school material.
-        </p>
-    </div>
+<div class="card">
 
-    <div class="card">
-        <div class="card-icon">🎵</div>
-        <h3>Music & Dance</h3>
-        <p>
-            Fun music games, dancing and movement activities
-            that get kids active.
-        </p>
-    </div>
+<div class="card-icon">🎨</div>
 
-    <div class="card">
-        <div class="card-icon">⚽</div>
-        <h3>Outdoor Games</h3>
-        <p>
-            Age-appropriate outdoor games, sports and activities
-            whenever weather and location allow.
-        </p>
-    </div>
+<h3>Arts & Crafts</h3>
 
-    <div class="card">
-        <div class="card-icon">🍿</div>
-        <h3>Movie Time</h3>
-        <p>
-            Relaxing movie or cartoon time with parent-approved
-            entertainment.
-        </p>
-    </div>
-
-    <div class="card">
-        <div class="card-icon">📖</div>
-        <h3>Story Time</h3>
-        <p>
-            Stories, reading and imagination games for a calm
-            and enjoyable experience.
-        </p>
-    </div>
+<p>
+Painting, drawing, DIY projects, coloring and creative
+activities designed to keep kids entertained.
+</p>
 
 </div>
+
+
+<div class="card">
+
+<div class="card-icon">📚</div>
+
+<h3>Homework Help</h3>
+
+<p>
+We can help children stay focused, complete assignments
+and review school material.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">🎵</div>
+
+<h3>Music & Dance</h3>
+
+<p>
+Fun music games, dancing and movement activities
+that get kids active.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">⚽</div>
+
+<h3>Outdoor Games</h3>
+
+<p>
+Age-appropriate outdoor games, sports and activities
+whenever weather and location allow.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">🍿</div>
+
+<h3>Movie Time</h3>
+
+<p>
+Relaxing movie or cartoon time with parent-approved
+entertainment.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="card-icon">📖</div>
+
+<h3>Story Time</h3>
+
+<p>
+Stories, reading and imagination games for a calm
+and enjoyable experience.
+</p>
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- PACKAGES -->
 
 <section id="packages">
 
 <div class="section-title">
-    <h2>Packages & Prices 💰</h2>
-    <p>Bs. 80 per babysitter, per hour.</p>
+
+<h2>Packages & Prices 💰</h2>
+
+<p>
+Bs. 80 per babysitter, per hour.
+</p>
+
 </div>
 
 <div class="cards price-cards">
 
-    <div class="card">
 
-        <h3>Basic Care</h3>
+<div class="card">
 
-        <p>1 child • 1 babysitter • 2 hours</p>
+<h3>Basic Care</h3>
 
-        <div class="price">160 Bs</div>
+<p>
+1 child • 1 babysitter • 2 hours
+</p>
 
-        <ul>
-            <li>Games</li>
-            <li>Snack supervision</li>
-            <li>Movie time</li>
-        </ul>
+<div class="price">
+160 Bs
+</div>
 
-        <br>
+<ul>
+<li>Games</li>
+<li>Snack supervision</li>
+<li>Movie time</li>
+</ul>
 
-        <button class="btn"
-        onclick="selectPackage('Basic Care - 160 Bs')">
-            Choose
-        </button>
+<br>
 
-    </div>
-
-
-    <div class="card popular">
-
-        <div class="popular-label">
-            MOST POPULAR ⭐
-        </div>
-
-        <h3>Fun Combo</h3>
-
-        <p>2 children • 2 babysitters • 3 hours</p>
-
-        <div class="price">480 Bs</div>
-
-        <ul>
-            <li>Arts & crafts</li>
-            <li>Dance activities</li>
-            <li>Story time</li>
-        </ul>
-
-        <br>
-
-        <button class="btn"
-        onclick="selectPackage('Fun Combo - 480 Bs')">
-            Choose
-        </button>
-
-    </div>
-
-
-    <div class="card">
-
-        <h3>Weekend Special</h3>
-
-        <p>3+ children • 3 babysitters • 5 hours</p>
-
-        <div class="price">1,200 Bs</div>
-
-        <ul>
-            <li>Outdoor activities</li>
-            <li>Creative workshops</li>
-            <li>Mini talent show</li>
-        </ul>
-
-        <br>
-
-        <button class="btn"
-        onclick="selectPackage('Weekend Special - 1,200 Bs')">
-            Choose
-        </button>
-
-    </div>
-
-
-    <div class="card">
-
-        <h3>VIP Happy Kids</h3>
-
-        <p>All-day • 3 babysitters • 8 hours</p>
-
-        <div class="price">1,920 Bs</div>
-
-        <ul>
-            <li>Meals included</li>
-            <li>Learning activities</li>
-            <li>Movie night</li>
-        </ul>
-
-        <br>
-
-        <button class="btn"
-        onclick="selectPackage('VIP Happy Kids - 1,920 Bs')">
-            Choose
-        </button>
-
-    </div>
+<button class="btn"
+onclick="selectPackage('Basic Care - 160 Bs')">
+Choose
+</button>
 
 </div>
+
+
+<div class="card popular">
+
+<div class="popular-label">
+MOST POPULAR ⭐
+</div>
+
+<h3>Fun Combo</h3>
+
+<p>
+2 children • 2 babysitters • 3 hours
+</p>
+
+<div class="price">
+480 Bs
+</div>
+
+<ul>
+<li>Arts & crafts</li>
+<li>Dance activities</li>
+<li>Story time</li>
+</ul>
+
+<br>
+
+<button class="btn"
+onclick="selectPackage('Fun Combo - 480 Bs')">
+Choose
+</button>
+
+</div>
+
+
+<div class="card">
+
+<h3>Weekend Special</h3>
+
+<p>
+3+ children • 3 babysitters • 5 hours
+</p>
+
+<div class="price">
+1,200 Bs
+</div>
+
+<ul>
+<li>Outdoor activities</li>
+<li>Creative workshops</li>
+<li>Mini talent show</li>
+</ul>
+
+<br>
+
+<button class="btn"
+onclick="selectPackage('Weekend Special - 1,200 Bs')">
+Choose
+</button>
+
+</div>
+
+
+<div class="card">
+
+<h3>VIP Happy Kids</h3>
+
+<p>
+All-day • 3 babysitters • 8 hours
+</p>
+
+<div class="price">
+1,920 Bs
+</div>
+
+<ul>
+<li>Meals included</li>
+<li>Learning activities</li>
+<li>Movie night</li>
+</ul>
+
+<br>
+
+<button class="btn"
+onclick="selectPackage('VIP Happy Kids - 1,920 Bs')">
+Choose
+</button>
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- SAFETY -->
 
 <section id="safety" class="safety">
 
 <div class="section-title">
-    <h2>Parents Come First 💗</h2>
-    <p>We want parents to feel comfortable while their kids have fun.</p>
+
+<h2>Parents Come First 💗</h2>
+
+<p>
+We want parents to feel comfortable while their kids have fun.
+</p>
+
 </div>
 
 <div class="safety-grid">
 
-    <div class="safety-box">
-        <span>🛡️</span>
-        <h3>Safety Focused</h3>
-        <p>
-            We prioritize a safe, supervised and comfortable
-            environment for every child.
-        </p>
-    </div>
 
-    <div class="safety-box">
-        <span>📱</span>
-        <h3>Parent Communication</h3>
-        <p>
-            Parents can provide special instructions and important
-            information before each session.
-        </p>
-    </div>
+<div class="safety-box">
 
-    <div class="safety-box">
-        <span>❤️</span>
-        <h3>Personalized Care</h3>
-        <p>
-            We adapt activities to the child's age, interests
-            and needs.
-        </p>
-    </div>
+<span>🛡️</span>
+
+<h3>Safety Focused</h3>
+
+<p>
+We prioritize a safe, supervised and comfortable
+environment for every child.
+</p>
 
 </div>
+
+
+<div class="safety-box">
+
+<span>📱</span>
+
+<h3>Parent Communication</h3>
+
+<p>
+Parents can provide special instructions and important
+information before each session.
+</p>
+
+</div>
+
+
+<div class="safety-box">
+
+<span>❤️</span>
+
+<h3>Personalized Care</h3>
+
+<p>
+We adapt activities to the child's age, interests
+and needs.
+</p>
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- BOOKING -->
 
 <section id="booking" class="booking">
 
 <div class="section-title">
-    <h2>Book Your Babysitting Session 📅</h2>
-    <p>Fill out the form and we'll have your request ready.</p>
+
+<h2>
+Book Your Babysitting Session 📅
+</h2>
+
+<p>
+Fill out the form and we'll have your request ready.
+</p>
+
 </div>
 
 <div class="booking-form">
 
 <form id="bookingForm">
 
-<div class="form-row">
-
-    <div class="form-group">
-        <label>Parent Name *</label>
-
-        <input
-            type="text"
-            id="parentName"
-            placeholder="Your name"
-            required
-        >
-    </div>
-
-    <div class="form-group">
-        <label>Email *</label>
-
-        <input
-            type="email"
-            id="email"
-            placeholder="your@email.com"
-            required
-        >
-    </div>
-
-</div>
 
 <div class="form-row">
-
-    <div class="form-group">
-
-        <label>Package *</label>
-
-        <select id="package">
-
-            <option>Basic Care - 160 Bs</option>
-
-            <option>Fun Combo - 480 Bs</option>
-
-            <option>Weekend Special - 1,200 Bs</option>
-
-            <option>VIP Happy Kids - 1,920 Bs</option>
-
-        </select>
-
-    </div>
-
-    <div class="form-group">
-
-        <label>Preferred Day *</label>
-
-        <select id="day">
-
-            <option>Weekday Afternoon</option>
-
-            <option>Saturday</option>
-
-            <option>Sunday</option>
-
-        </select>
-
-    </div>
-
-</div>
-
-<div class="form-row">
-
-    <div class="form-group">
-
-        <label>Preferred Date</label>
-
-        <input type="date" id="date">
-
-    </div>
-
-    <div class="form-group">
-
-        <label>Preferred Time</label>
-
-        <input type="time" id="time">
-
-    </div>
-
-</div>
 
 <div class="form-group">
 
-    <label>Special Notes</label>
+<label>
+Parent Name *
+</label>
 
-    <textarea
-        id="notes"
-        placeholder="Tell us anything we should know about the children, activities, snacks, etc."
-    ></textarea>
+<input
+type="text"
+id="parentName"
+placeholder="Your name"
+required
+>
 
 </div>
 
+
+<div class="form-group">
+
+<label>
+Email *
+</label>
+
+<input
+type="email"
+id="email"
+placeholder="your@email.com"
+required
+>
+
+</div>
+
+</div>
+
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>
+Package *
+</label>
+
+<select id="package">
+
+<option>
+Basic Care - 160 Bs
+</option>
+
+<option>
+Fun Combo - 480 Bs
+</option>
+
+<option>
+Weekend Special - 1,200 Bs
+</option>
+
+<option>
+VIP Happy Kids - 1,920 Bs
+</option>
+
+</select>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Preferred Day *
+</label>
+
+<select id="day">
+
+<option>
+Weekday Afternoon
+</option>
+
+<option>
+Saturday
+</option>
+
+<option>
+Sunday
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="form-row">
+
+<div class="form-group">
+
+<label>
+Preferred Date
+</label>
+
+<input
+type="date"
+id="date"
+>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Preferred Time
+</label>
+
+<input
+type="time"
+id="time"
+>
+
+</div>
+
+</div>
+
+
+<div class="form-group">
+
+<label>
+Special Notes
+</label>
+
+<textarea
+id="notes"
+placeholder="Tell us anything we should know about the children, activities, snacks, etc."
+></textarea>
+
+</div>
+
+
 <button type="submit" class="btn">
-    💗 Submit Booking
+💗 Submit Booking
 </button>
 
 <div class="saved" id="savedMessage"></div>
@@ -1124,380 +1439,605 @@ footer h3{
 </form>
 
 </div>
+
 </section>
+
+
+<!-- PAYMENT -->
+
+<section id="payment" class="payment">
+
+<div class="section-title">
+
+<h2>
+Easy Payment 💳
+</h2>
+
+<p>
+Scan the QR code to make your payment.
+</p>
+
+</div>
+
+<div class="payment-box">
+
+<h3>
+Happy Kids Payment QR
+</h3>
+
+<p>
+Use your banking app to scan the QR code.
+Please send us your payment confirmation afterward.
+</p>
+
+<div class="qr-container">
+
+<img
+src="payment-qr.png"
+alt="Happy Kids Payment QR Code"
+>
+
+</div>
+
+<p class="payment-note">
+💗 Thank you for choosing Happy Kids!
+</p>
+
+</div>
+
+</section>
+
+
+<!-- REVIEWS -->
 
 <section id="reviews" class="reviews">
 
 <div class="section-title">
-    <h2>What Parents Say ⭐</h2>
-    <p>Happy kids = happy parents!</p>
+
+<h2>
+What Parents Say ⭐
+</h2>
+
+<p>
+Happy kids = happy parents!
+</p>
+
 </div>
 
 <div class="review-grid">
 
-    <div class="review">
 
-        <div class="stars">★★★★★</div>
+<div class="review">
 
-        <p>
-            "My daughter had so much fun with the arts and crafts.
-            She didn't want the babysitting session to end!"
-        </p>
+<div class="stars">
+★★★★★
+</div>
 
-        <strong>— Happy Parent</strong>
+<p>
+"My daughter had so much fun with the arts and crafts.
+She didn't want the babysitting session to end!"
+</p>
 
-    </div>
-
-    <div class="review">
-
-        <div class="stars">★★★★★</div>
-
-        <p>
-            "I loved that they included homework time before
-            playing. It made the afternoon so much easier."
-        </p>
-
-        <strong>— Happy Parent</strong>
-
-    </div>
-
-    <div class="review">
-
-        <div class="stars">★★★★★</div>
-
-        <p>
-            "The kids had an amazing time and were talking about
-            the activities all weekend."
-        </p>
-
-        <strong>— Happy Parent</strong>
-
-    </div>
+<strong>
+— Happy Parent
+</strong>
 
 </div>
+
+
+<div class="review">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+"I loved that they included homework time before
+playing. It made the afternoon so much easier."
+</p>
+
+<strong>
+— Happy Parent
+</strong>
+
+</div>
+
+
+<div class="review">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+"The kids had an amazing time and were talking about
+the activities all weekend."
+</p>
+
+<strong>
+— Happy Parent
+</strong>
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- FAQ -->
 
 <section id="faq">
 
 <div class="section-title">
-    <h2>Frequently Asked Questions ❓</h2>
-    <p>Everything parents need to know.</p>
+
+<h2>
+Frequently Asked Questions ❓
+</h2>
+
+<p>
+Everything parents need to know.
+</p>
+
 </div>
 
 <div class="faq">
 
-    <div class="faq-item">
 
-        <button class="faq-question">
-            What days are you available?
-            <span>+</span>
-        </button>
+<div class="faq-item">
 
-        <div class="faq-answer">
-            We offer weekday afternoon sessions and weekend
-            babysitting depending on availability.
-        </div>
+<button class="faq-question">
 
-    </div>
+What days are you available?
 
-    <div class="faq-item">
+<span>+</span>
 
-        <button class="faq-question">
-            Where do you babysit?
-            <span>+</span>
-        </button>
+</button>
 
-        <div class="faq-answer">
-            Our service is based in Urubó, Santa Cruz, Bolivia.
-        </div>
+<div class="faq-answer">
 
-    </div>
-
-    <div class="faq-item">
-
-        <button class="faq-question">
-            Can I request specific activities?
-            <span>+</span>
-        </button>
-
-        <div class="faq-answer">
-            Yes! Parents can write special requests in the booking
-            form so we can plan activities the kids will enjoy.
-        </div>
-
-    </div>
-
-    <div class="faq-item">
-
-        <button class="faq-question">
-            Can I book more than one child?
-            <span>+</span>
-        </button>
-
-        <div class="faq-answer">
-            Yes. Our packages include options for multiple children.
-            Contact us if you have a larger group.
-        </div>
-
-    </div>
-
-    <div class="faq-item">
-
-        <button class="faq-question">
-            How do I confirm my booking?
-            <span>+</span>
-        </button>
-
-        <div class="faq-answer">
-            Submit the booking form and contact us using the
-            information below to confirm availability.
-        </div>
-
-    </div>
+We offer weekday afternoon sessions and weekend
+babysitting depending on availability.
 
 </div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+Where do you babysit?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Our service is based in Urubó, Santa Cruz, Bolivia.
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+Can I request specific activities?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Yes! Parents can write special requests in the booking
+form so we can plan activities the kids will enjoy.
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+Can I book more than one child?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Yes. Our packages include options for multiple children.
+Contact us if you have a larger group.
+
+</div>
+
+</div>
+
+
+<div class="faq-item">
+
+<button class="faq-question">
+
+How do I confirm my booking?
+
+<span>+</span>
+
+</button>
+
+<div class="faq-answer">
+
+Submit the booking form and contact us using WhatsApp
+or the phone number below to confirm availability.
+
+</div>
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- CONTACT -->
 
 <section id="contact" class="contact">
 
 <div class="section-title">
-    <h2>Let's Stay Connected 💌</h2>
-    <p>Have questions? We'd love to hear from you.</p>
+
+<h2>
+Let's Stay Connected 💌
+</h2>
+
+<p>
+Have questions? We'd love to hear from you.
+</p>
+
 </div>
 
 <div class="contact-grid">
 
-    <div class="contact-card">
 
-        <span>📧</span>
+<div class="contact-card">
 
-        <h3>Email</h3>
+<span>📱</span>
 
-        <p>
-            <a href="mailto:happykids.bo@gmail.com">
-                happykids.bo@gmail.com
-            </a>
-        </p>
+<h3>
+Phone / WhatsApp
+</h3>
 
-        <p>
-            <a href="mailto:booking.happykids@outlook.com">
-                booking.happykids@outlook.com
-            </a>
-        </p>
+<p class="phone-number">
+69170555
+</p>
 
-    </div>
+<br>
 
-    <div class="contact-card">
-
-        <span>📍</span>
-
-        <h3>Location</h3>
-
-        <p>Urubó, Santa Cruz, Bolivia</p>
-
-    </div>
-
-    <div class="contact-card">
-
-        <span>🕒</span>
-
-        <h3>Availability</h3>
-
-        <p>Weekday Afternoons</p>
-        <p>Weekends All Day</p>
-
-    </div>
+<a
+href="https://wa.me/59169170555"
+target="_blank"
+class="btn">
+💬 Message Us
+</a>
 
 </div>
+
+
+<div class="contact-card">
+
+<span>📧</span>
+
+<h3>
+Email
+</h3>
+
+<p>
+
+<a href="mailto:happykids.bo@gmail.com">
+happykids.bo@gmail.com
+</a>
+
+</p>
+
+<br>
+
+<p>
+
+<a href="mailto:booking.happykids@outlook.com">
+booking.happykids@outlook.com
+</a>
+
+</p>
+
+</div>
+
+
+<div class="contact-card">
+
+<span>📍</span>
+
+<h3>
+Location
+</h3>
+
+<p>
+Urubó, Santa Cruz, Bolivia
+</p>
+
+<br>
+
+<span>🕒</span>
+
+<p>
+Weekday Afternoons<br>
+Weekends All Day
+</p>
+
+</div>
+
+</div>
+
 </section>
+
+
+<!-- FOOTER -->
 
 <footer>
 
-<h3>🧸 Happy Kids Babysitting</h3>
+<h3>
+🧸 Happy Kids Babysitting
+</h3>
 
-<p>Safe • Fun • Caring</p>
+<p>
+Safe • Fun • Caring
+</p>
 
 <p style="margin-top:15px;font-size:.9rem;">
-    Made with ❤️ for families in Urubó
+Made with ❤️ for families in Urubó
 </p>
 
 </footer>
 
+
+<!-- WHATSAPP FLOATING BUTTON -->
+
 <a
-    class="whatsapp"
-    href="https://wa.me/"
-    target="_blank"
-    title="Contact us on WhatsApp"
+class="whatsapp"
+href="https://wa.me/59169170555"
+target="_blank"
+title="Contact us on WhatsApp"
 >
-    💬
+💬
 </a>
 
+
+<!-- BACK TO TOP -->
+
 <button
-    class="top"
-    id="topBtn"
-    onclick="window.scrollTo({top:0,behavior:'smooth'})"
+class="top"
+id="topBtn"
+onclick="window.scrollTo({top:0,behavior:'smooth'})"
 >
-    ↑
+↑
 </button>
+
+
+<!-- SUCCESS MODAL -->
 
 <div class="modal" id="successModal">
 
 <div class="modal-content">
 
-    <h2>🎉 Booking Saved!</h2>
+<h2>
+🎉 Booking Saved!
+</h2>
 
-    <p>
-        Your booking information has been saved on this device.
-        Please contact Happy Kids to confirm availability.
-    </p>
+<p>
+Your booking information has been saved on this device.
+Please contact Happy Kids on WhatsApp to confirm
+availability.
+</p>
 
-    <button class="btn close-modal" onclick="closeModal()">
-        Got it!
-    </button>
+<a
+href="https://wa.me/59169170555"
+target="_blank"
+class="btn close-modal">
+💬 Confirm on WhatsApp
+</a>
+
+<br>
+
+<button
+class="btn secondary close-modal"
+onclick="closeModal()">
+Close
+</button>
 
 </div>
 
 </div>
+
+
+<!-- JAVASCRIPT -->
 
 <script>
 
+
+/* SCROLL TO BOOKING */
+
 function scrollToBooking(){
 
-    document.getElementById("booking").scrollIntoView({
-        behavior:"smooth"
-    });
+document.getElementById("booking").scrollIntoView({
+behavior:"smooth"
+});
 
 }
+
+
+/* SELECT PACKAGE */
 
 function selectPackage(packageName){
 
-    document.getElementById("package").value = packageName;
+document.getElementById("package").value = packageName;
 
-    document.getElementById("booking").scrollIntoView({
-        behavior:"smooth"
-    });
+document.getElementById("booking").scrollIntoView({
+behavior:"smooth"
+});
 
 }
+
+
+/* BOOKING FORM */
 
 const form = document.getElementById("bookingForm");
 
+
+/* LOAD SAVED BOOKING */
+
 window.onload = function(){
 
-    const saved = localStorage.getItem("bookingData");
+const saved = localStorage.getItem("bookingData");
 
-    if(saved){
+if(saved){
 
-        const data = JSON.parse(saved);
+const data = JSON.parse(saved);
 
-        document.getElementById("parentName").value =
-            data.parentName || "";
+document.getElementById("parentName").value =
+data.parentName || "";
 
-        document.getElementById("email").value =
-            data.email || "";
+document.getElementById("email").value =
+data.email || "";
 
-        document.getElementById("package").value =
-            data.package || "Basic Care - 160 Bs";
+document.getElementById("package").value =
+data.package || "Basic Care - 160 Bs";
 
-        document.getElementById("day").value =
-            data.day || "Weekday Afternoon";
+document.getElementById("day").value =
+data.day || "Weekday Afternoon";
 
-        document.getElementById("date").value =
-            data.date || "";
+document.getElementById("date").value =
+data.date || "";
 
-        document.getElementById("time").value =
-            data.time || "";
+document.getElementById("time").value =
+data.time || "";
 
-        document.getElementById("notes").value =
-            data.notes || "";
-
-    }
-
-};
-
-form.addEventListener("submit",function(e){
-
-    e.preventDefault();
-
-    const bookingData = {
-
-        parentName:
-            document.getElementById("parentName").value,
-
-        email:
-            document.getElementById("email").value,
-
-        package:
-            document.getElementById("package").value,
-
-        day:
-            document.getElementById("day").value,
-
-        date:
-            document.getElementById("date").value,
-
-        time:
-            document.getElementById("time").value,
-
-        notes:
-            document.getElementById("notes").value
-
-    };
-
-    localStorage.setItem(
-        "bookingData",
-        JSON.stringify(bookingData)
-    );
-
-    document.getElementById("savedMessage").style.display =
-        "block";
-
-    document.getElementById("savedMessage").innerText =
-        "✓ Booking saved successfully!";
-
-    document.getElementById("successModal").style.display =
-        "flex";
-
-});
-
-function closeModal(){
-
-    document.getElementById("successModal").style.display =
-        "none";
+document.getElementById("notes").value =
+data.notes || "";
 
 }
 
-document.querySelectorAll(".faq-question").forEach(function(button){
+};
 
-    button.addEventListener("click",function(){
 
-        const item = button.parentElement;
+/* SAVE BOOKING */
 
-        item.classList.toggle("active");
+form.addEventListener("submit",function(e){
 
-        const symbol = button.querySelector("span");
+e.preventDefault();
 
-        symbol.textContent =
-            item.classList.contains("active") ? "−" : "+";
 
-    });
+const bookingData = {
+
+parentName:
+document.getElementById("parentName").value,
+
+email:
+document.getElementById("email").value,
+
+package:
+document.getElementById("package").value,
+
+day:
+document.getElementById("day").value,
+
+date:
+document.getElementById("date").value,
+
+time:
+document.getElementById("time").value,
+
+notes:
+document.getElementById("notes").value
+
+};
+
+
+localStorage.setItem(
+"bookingData",
+JSON.stringify(bookingData)
+);
+
+
+document.getElementById("savedMessage").style.display =
+"block";
+
+
+document.getElementById("savedMessage").innerText =
+"✓ Booking saved successfully!";
+
+
+document.getElementById("successModal").style.display =
+"flex";
 
 });
 
-const topButton = document.getElementById("topBtn");
+
+/* CLOSE MODAL */
+
+function closeModal(){
+
+document.getElementById("successModal").style.display =
+"none";
+
+}
+
+
+/* FAQ */
+
+document.querySelectorAll(".faq-question").forEach(function(button){
+
+button.addEventListener("click",function(){
+
+const item = button.parentElement;
+
+item.classList.toggle("active");
+
+const symbol = button.querySelector("span");
+
+symbol.textContent =
+item.classList.contains("active") ? "−" : "+";
+
+});
+
+});
+
+
+/* BACK TO TOP */
+
+const topButton =
+document.getElementById("topBtn");
+
 
 window.addEventListener("scroll",function(){
 
-    if(window.scrollY > 500){
+if(window.scrollY > 500){
 
-        topButton.style.display = "block";
+topButton.style.display = "block";
 
-    }else{
+}else{
 
-        topButton.style.display = "none";
+topButton.style.display = "none";
 
-    }
+}
 
 });
+
 
 </script>
 
